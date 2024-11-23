@@ -74,7 +74,7 @@ pipeline {
                         for (vuln in vulnerabilities) {
                             def testIssue = [
                                 fields: [
-                                    project: [id: '10000'], 
+                                    project: [key :'JPP'], 
                                     summary: "Vulnerability Found: ${vuln.name}",
                                     description: """
                                         Severity: ${vuln.severity}
